@@ -6,7 +6,7 @@ module.exports = {
     entry: './src/main.js',
 
     output: {
-      path: path.resolve(__dirname, 'docs'),
+      path: path.resolve(__dirname, 'docs/wordle'),
       filename: 'bundle.js'
     },
 
