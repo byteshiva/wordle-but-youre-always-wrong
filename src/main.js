@@ -1,4 +1,4 @@
-import Ta from './wordListTa.js';
+import BadWords from './wordListTa.js';
 import GoodWords from './wordListLa.js';
 
 window.wordle = {}
@@ -2005,7 +2005,7 @@ window.wordle.bundle = (function() {
             var word1 = this.$board.querySelectorAll('game-row')[this.rowIndex];
             var wordGuess = this.boardState[this.rowIndex];
             e = wordGuess;
-            if (!Ta.includes(e) && !GoodWords.includes(e)) {
+            if (!BadWords.includes(e) && !GoodWords.includes(e)) {
               word1.setAttribute('invalid', '');
               this.addToast('Not in word list');
               return;
